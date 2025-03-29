@@ -1,2 +1,1 @@
-# programacaointernet
-trabalhos da faculdade
+# programacaointernettrabalhos da faculdade
