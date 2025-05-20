@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Litros de Gasolina</title>
+</head>
+<body>
+    <h1>Calculadora de Abastecimento</h1>
+    
+    <div>
+        <label>Preço por litro (R$): <input type="number" id="precoLitro" step="0.01" min="0.01"></label>
+    </div>
+    
+    <div>
+        <label>Valor disponível (R$): <input type="number" id="valorAbastecer" step="0.01" min="0.01"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular Litros</button>
+    
+    <div id="resultado" style="display:none;">
+        <p>Litros abastecidos: <span id="litros"></span> L</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

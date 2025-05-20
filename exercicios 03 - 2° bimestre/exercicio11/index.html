@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Ajuste Salarial</title>
+</head>
+<body>
+    <h1>Calculadora de Ajuste Salarial</h1>
+    
+    <div>
+        <label>Salário atual (R$): <input type="number" id="salario" step="0.01" min="0"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular</button>
+    
+    <div id="resultado" style="display:none;">
+        <h3>Resultado:</h3>
+        <p>Salário inicial: R$ <span id="salarioInicial"></span></p>
+        <p>Salário com aumento (15%): R$ <span id="salarioAumento"></span></p>
+        <p>Salário final (descontando 8%): R$ <span id="salarioFinal"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

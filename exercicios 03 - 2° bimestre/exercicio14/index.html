@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Divisor de Conta do Bar</title>
+</head>
+<body>
+    <h1>Divisor de Conta do Bar</h1>
+    
+    <div>
+        <label>Valor total da conta (R$): <input type="number" id="conta" step="0.01" min="0.01"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular</button>
+    
+    <div id="resultado" style="display:none;">
+        <h3>Valor para cada amigo:</h3>
+        <p>Carlos: R$ <span id="carlos"></span></p>
+        <p>André: R$ <span id="andre"></span></p>
+        <p>Felipe: R$ <span id="felipe"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

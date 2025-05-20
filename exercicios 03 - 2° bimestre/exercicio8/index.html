@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Venda de Camisetas</title>
+</head>
+<body>
+    <h1>Fábrica de Camisetas</h1>
+    <h2>Cálculo de Vendas</h2>
+    
+    <div>
+        <label>Camisetas Pequenas (R$ 10,00): <input type="number" id="pequenas" min="0"></label>
+    </div>
+    
+    <div>
+        <label>Camisetas Médias (R$ 12,00): <input type="number" id="medias" min="0"></label>
+    </div>
+    
+    <div>
+        <label>Camisetas Grandes (R$ 15,00): <input type="number" id="grandes" min="0"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular Total</button>
+    
+    <div id="resultado" style="display:none;">
+        <p>Valor total arrecadado: R$ <span id="total"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

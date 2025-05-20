@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Distância entre Pontos</title>
+</head>
+<body>
+    <h1>Distância entre Dois Pontos</h1>
+    
+    <h3>Ponto A</h3>
+    <div>
+        <label>Coordenada X: <input type="number" id="x1" step="0.01"></label>
+    </div>
+    <div>
+        <label>Coordenada Y: <input type="number" id="y1" step="0.01"></label>
+    </div>
+    
+    <h3>Ponto B</h3>
+    <div>
+        <label>Coordenada X: <input type="number" id="x2" step="0.01"></label>
+    </div>
+    <div>
+        <label>Coordenada Y: <input type="number" id="y2" step="0.01"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular Distância</button>
+    
+    <div id="resultado" style="display:none;">
+        <p>Distância entre os pontos: <span id="distancia"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

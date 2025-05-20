@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Ferradoras para Haras</title>
+</head>
+<body>
+    <h1>Cálculo de Ferradoras para Haras</h1>
+    
+    <div>
+        <label>Quantidade de cavalos: <input type="number" id="cavalos" min="1"></label>
+    </div>
+    
+    <div>
+        <label>Ferradoras por cavalo: <input type="number" id="ferradorasPorCavalo" min="1" value="4"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular</button>
+    
+    <div id="resultado" style="display:none;">
+        <p>Total de ferradoras necessárias: <span id="totalFerradoras"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

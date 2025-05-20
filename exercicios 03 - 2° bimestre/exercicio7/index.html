@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dias desde o início do ano</title>
+</head>
+<body>
+    <h1>Calculadora de Dias do Ano</h1>
+    
+    <div>
+        <label>Dia: <input type="number" id="dia" min="1" max="30"></label>
+    </div>
+    
+    <div>
+        <label>Mês: <input type="number" id="mes" min="1" max="12"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular Dias</button>
+    
+    <div id="resultado" style="display:none;">
+        <p>Dias passados desde o início do ano: <span id="totalDias"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

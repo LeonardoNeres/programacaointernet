@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotpão - Cálculo de Vendas</title>
+</head>
+<body>
+    <h1>Hotpão - Controle Diário de Vendas</h1>
+    
+    <div>
+        <label>Quantidade de pães vendidos: <input type="number" id="paes" min="0"></label>
+    </div>
+    
+    <div>
+        <label>Quantidade de broas vendidas: <input type="number" id="broas" min="0"></label>
+    </div>
+    
+    <button id="calcularBtn">Calcular Vendas</button>
+    
+    <div id="resultado" style="display:none;">
+        <p>Total arrecadado: R$ <span id="total"></span></p>
+        <p>Valor para poupança (10%): R$ <span id="poupanca"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
