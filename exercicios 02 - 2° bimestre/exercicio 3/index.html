@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Matemática</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Matemática</h1>
+        <p>Digite dois números inteiros para ver os resultados das operações básicas:</p>
+        
+        <div class="input-group">
+            <label for="numero1">Primeiro número:</label>
+            <input type="number" id="numero1" placeholder="Número inteiro">
+        </div>
+        
+        <div class="input-group">
+            <label for="numero2">Segundo número:</label>
+            <input type="number" id="numero2" placeholder="Número inteiro">
+        </div>
+        
+        <button onclick="calcular()">Calcular</button>
+        
+        <div id="resultado" class="result">
+            <h3>Resultados:</h3>
+            <p><span class="operacao">Soma:</span> <span id="soma"></span></p>
+            <p><span class="operacao">Subtração:</span> <span id="subtracao"></span></p>
+            <p><span class="operacao">Multiplicação:</span> <span id="multiplicacao"></span></p>
+            <p><span class="operacao">Divisão:</span> <span id="divisao"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

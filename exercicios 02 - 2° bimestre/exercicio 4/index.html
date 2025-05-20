@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria - Faça seu pedido</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pizzaria Delícia</h1>
+        <p>Monte seu pedido de pizza com até 4 sabores:</p>
+        
+        <form id="pedidoForm">
+            <div class="input-group">
+                <label for="sabor1">Sabor 1:</label>
+                <input type="text" id="sabor1" required placeholder="Ex: Calabresa">
+            </div>
+            
+            <div class="input-group">
+                <label for="sabor2">Sabor 2:</label>
+                <input type="text" id="sabor2" required placeholder="Ex: Margherita">
+            </div>
+            
+            <div class="input-group">
+                <label for="sabor3">Sabor 3:</label>
+                <input type="text" id="sabor3" placeholder="Opcional">
+            </div>
+            
+            <div class="input-group">
+                <label for="sabor4">Sabor 4:</label>
+                <input type="text" id="sabor4" placeholder="Opcional">
+            </div>
+            
+            <div class="input-group">
+                <label for="refrigerantes">Quantidade de refrigerantes:</label>
+                <input type="number" id="refrigerantes" min="0" value="0">
+            </div>
+            
+            <button type="button" onclick="calcularPedido()">Calcular Pedido</button>
+        </form>
+        
+        <div id="resultado" class="result">
+            <h3>Seu Pedido:</h3>
+            <div id="saboresEscolhidos"></div>
+            <p class="total">Total a pagar: R$ <span id="valorTotal"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Omelete</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Omelete</h1>
+        <p>Digite quantas pessoas irão comer omelete:</p>
+        
+        <label for="pessoas">Número de pessoas:</label>
+        <input type="number" id="pessoas" min="1" placeholder="Ex: 4">
+        
+        <button onclick="calcular()">Calcular</button>
+        
+        <div id="resultado" class="result">
+            <h3>Ingredientes necessários:</h3>
+            <p><span id="ovos"></span> ovos</p>
+            <p><span id="queijo"></span> gramas de queijo</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

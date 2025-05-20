@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Variação do Dólar</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Variação do Dólar</h1>
+        <p>Digite a cotação atual do dólar para calcular os valores com diferentes aumentos percentuais:</p>
+        
+        <label for="dolar">Cotação atual do dólar (R$):</label>
+        <input type="number" id="dolar" step="0.01" min="0.01" placeholder="Ex: 5.20">
+        
+        <button onclick="calcular()">Calcular</button>
+        
+        <div id="resultado" class="result">
+            <h3>Resultados:</h3>
+            <p>Valor original: R$ <span id="original"></span></p>
+            <p><span class="percentage">+1%:</span> R$ <span id="umPorcento"></span></p>
+            <p><span class="percentage">+2%:</span> R$ <span id="doisPorcento"></span></p>
+            <p><span class="percentage">+5%:</span> R$ <span id="cincoPorcento"></span></p>
+            <p><span class="percentage">+10%:</span> R$ <span id="dezPorcento"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
