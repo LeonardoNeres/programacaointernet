@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Vendas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Vendas</h1>
+
+    <div class="tabela-condicoes">
+      <p><strong>Condições de Pagamento:</strong></p>
+      <ul>
+        <li>a) À vista (dinheiro/cheque) → 10% desconto</li>
+        <li>b) À vista (cartão) → 15% desconto</li>
+        <li>c) 2x no cartão → sem juros</li>
+        <li>d) 2x no cartão → com 10% juros</li>
+      </ul>
+    </div>
+
+    <div class="formulario">
+      <label for="preco">Preço do Produto (R$):</label>
+      <input type="number" id="preco" step="0.01" placeholder="Ex: 150.00" required>
+
+      <label for="condicao">Condição de Pagamento (a-d):</label>
+      <input type="text" id="condicao" placeholder="Digite a, b, c ou d" required>
+
+      <button onclick="calcularPagamento()">Calcular Valor Final</button>
+
+      <div id="resultado" class="resultado"></div>
+    </div>
+  </div>
+  
+<footer class="footer">
+  <p>2025 - Desenvolvido por Leonardo Felipe Neres. RA 60005518</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

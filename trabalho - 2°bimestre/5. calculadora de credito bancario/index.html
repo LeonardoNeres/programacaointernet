@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Crédito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Crédito Bancário</h1>
+    
+    <div class="tabela-credito">
+      <p><strong>Tabela de Crédito:</strong></p>
+      <ul>
+        <li>Até R$200 → Sem crédito</li>
+        <li>R$201 a R$400 → 20%</li>
+        <li>R$401 a R$600 → 30%</li>
+        <li>Acima de R$600 → 40%</li>
+      </ul>
+    </div>
+    
+    <div class="formulario">
+      <div class="campo">
+        <label for="saldo">Saldo Médio (R$):</label>
+        <input type="number" id="saldo" step="0.01" placeholder="Ex: 350.00" required>
+      </div>
+    
+      <button onclick="calcularCredito()">Calcular Crédito</button>
+    
+      <div id="resultado" class="resultado"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <p>2025 - Desenvolvido por Leonardo Felipe Neres. RA 60005518</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

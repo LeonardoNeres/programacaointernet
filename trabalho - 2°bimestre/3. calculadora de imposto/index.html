@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Impostos - DETRAN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Impostos</h1>
+    <p>Calcule o imposto para transferência de veículos</p>
+
+    <div class="formulario">
+      <div class="campo">
+        <label for="ano">Ano de fabricação do veículo:</label>
+        <input type="number" id="ano" min="1900" max="2024" placeholder="Ex: 1995" required />
+        <label for="valor">Valor de tabela do veículo (R$):</label>
+        <input type="number" id="valor" min="0" step="0.01" placeholder="Ex: 25000.00" required />
+      </div>
+
+      <button onclick="calcularImposto()">Calcular Imposto</button>
+
+      <div id="resultado" class="resultado"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>2025 - Desenvolvido por Leonardo Felipe Neres. RA 60005518</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
